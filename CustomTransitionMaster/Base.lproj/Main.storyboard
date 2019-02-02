@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTransitionMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="uqP-g2-JHG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-0c-iNL">
+                                <rect key="frame" x="100" y="315.5" width="175" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Custom Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="guS-2e-tmp" kind="presentation" id="ZNx-Hk-dI1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zi-2A-Obe">
+                                <rect key="frame" x="88" y="359" width="199" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Custom Presentation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="etf-DI-shq" kind="presentation" id="WAK-C4-TSD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uqP-g2-JHG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5VB-Q9-Re2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uqP-g2-JHG" secondAttribute="bottom" id="6LS-9h-iJm"/>
+                            <constraint firstItem="uqP-g2-JHG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6id-Qi-qlG"/>
+                            <constraint firstItem="3Zi-2A-Obe" firstAttribute="top" secondItem="Pbf-0c-iNL" secondAttribute="bottom" constant="7.5" id="E4C-Of-9Nr"/>
+                            <constraint firstItem="3Zi-2A-Obe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fj9-C4-sUn"/>
+                            <constraint firstItem="Pbf-0c-iNL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LVC-oy-Fao"/>
+                            <constraint firstItem="Pbf-0c-iNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ScB-ZZ-dLp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uqP-g2-JHG" secondAttribute="trailing" id="TOm-nN-5gW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Custom Animation View Controller-->
+        <scene sceneID="S6J-B9-lck">
+            <objects>
+                <viewController id="guS-2e-tmp" customClass="CustomAnimationViewController" customModule="CustomTransitionMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Emu-KX-609">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyQ-Ty-ZGH">
+                                <rect key="frame" x="150" y="315.5" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDismissButton:" destination="guS-2e-tmp" eventType="touchUpInside" id="yA9-Tm-ZiO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yyQ-Ty-ZGH" firstAttribute="centerX" secondItem="Emu-KX-609" secondAttribute="centerX" id="4Hq-mX-ka0"/>
+                            <constraint firstItem="yyQ-Ty-ZGH" firstAttribute="centerY" secondItem="Emu-KX-609" secondAttribute="centerY" id="56L-Kt-VfF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kb8-6P-uvA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iff-7n-maW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458" y="27"/>
+        </scene>
+        <!--Custom Presentation View Controller-->
+        <scene sceneID="nFp-3n-p6I">
+            <objects>
+                <viewController id="etf-DI-shq" customClass="CustomPresentationViewController" customModule="CustomTransitionMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RYK-a5-CAC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2e-7h-mdA">
+                                <rect key="frame" x="16" y="20" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDismissButton:" destination="etf-DI-shq" eventType="touchUpInside" id="spP-Hb-G2y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55266643550000005" green="0.67647634109999999" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="E2e-7h-mdA" firstAttribute="leading" secondItem="f3C-yC-wao" secondAttribute="leading" constant="16" id="1Cg-D1-xKj"/>
+                            <constraint firstItem="f3C-yC-wao" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E2e-7h-mdA" secondAttribute="trailing" symbolic="YES" id="2sC-Yq-TmI"/>
+                            <constraint firstItem="E2e-7h-mdA" firstAttribute="top" secondItem="f3C-yC-wao" secondAttribute="top" id="zpm-r4-BSP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f3C-yC-wao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxO-oL-uJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="694"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="376" height="553"/>
+    </resources>
+</document>
