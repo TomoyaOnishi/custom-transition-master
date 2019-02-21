@@ -41,6 +41,16 @@
                                     <segue destination="etf-DI-shq" kind="presentation" id="WAK-C4-TSD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwC-UK-Gq5">
+                                <rect key="frame" x="97.5" y="403" width="180" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Interactive Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rFP-US-PLk" kind="presentation" id="SqP-We-26s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -48,10 +58,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uqP-g2-JHG" secondAttribute="bottom" id="6LS-9h-iJm"/>
                             <constraint firstItem="uqP-g2-JHG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6id-Qi-qlG"/>
                             <constraint firstItem="3Zi-2A-Obe" firstAttribute="top" secondItem="Pbf-0c-iNL" secondAttribute="bottom" constant="7.5" id="E4C-Of-9Nr"/>
+                            <constraint firstItem="WwC-UK-Gq5" firstAttribute="top" secondItem="3Zi-2A-Obe" secondAttribute="bottom" constant="8" id="EK9-NK-xmd"/>
                             <constraint firstItem="3Zi-2A-Obe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fj9-C4-sUn"/>
                             <constraint firstItem="Pbf-0c-iNL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LVC-oy-Fao"/>
                             <constraint firstItem="Pbf-0c-iNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ScB-ZZ-dLp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uqP-g2-JHG" secondAttribute="trailing" id="TOm-nN-5gW"/>
+                            <constraint firstItem="WwC-UK-Gq5" firstAttribute="centerX" secondItem="uqP-g2-JHG" secondAttribute="centerX" id="pfg-F7-SPf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -121,6 +133,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxO-oL-uJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1457" y="694"/>
+        </scene>
+        <!--Interactive Transition View Controller-->
+        <scene sceneID="U9g-XI-0A4">
+            <objects>
+                <viewController id="rFP-US-PLk" customClass="InteractiveTransitionViewController" customModule="CustomTransitionMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pSD-0V-4Sw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JLo-PT-TdA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvu-ba-eJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2215" y="400"/>
         </scene>
     </scenes>
     <resources>

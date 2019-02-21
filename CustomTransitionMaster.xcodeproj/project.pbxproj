@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6E1288221EB0DA00FA8CB2 /* InteractiveTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E1287221EB0DA00FA8CB2 /* InteractiveTransitionViewController.swift */; };
+		DD6E128A221EB16500FA8CB2 /* InteractiveTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E1289221EB16500FA8CB2 /* InteractiveTransitions.swift */; };
 		DD7AF83E22050F4F00E6907A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AF83D22050F4F00E6907A /* AppDelegate.swift */; };
 		DD7AF84022050F4F00E6907A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AF83F22050F4F00E6907A /* ViewController.swift */; };
 		DD7AF84322050F4F00E6907A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7AF84122050F4F00E6907A /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD6E1287221EB0DA00FA8CB2 /* InteractiveTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransitionViewController.swift; sourceTree = "<group>"; };
+		DD6E1289221EB16500FA8CB2 /* InteractiveTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransitions.swift; sourceTree = "<group>"; };
 		DD7AF83A22050F4F00E6907A /* CustomTransitionMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransitionMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7AF83D22050F4F00E6907A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7AF83F22050F4F00E6907A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				DD7AF8572205B57F00E6907A /* CustomAnimationTransitions.swift */,
 				DD7AF8592205B5D600E6907A /* CustomPresentationViewController.swift */,
 				DD7AF85322051E8B00E6907A /* CustomPresentationTransitions.swift */,
+				DD6E1287221EB0DA00FA8CB2 /* InteractiveTransitionViewController.swift */,
+				DD6E1289221EB16500FA8CB2 /* InteractiveTransitions.swift */,
 			);
 			path = CustomTransitionMaster;
 			sourceTree = "<group>";
@@ -150,8 +156,10 @@
 				DD7AF8582205B57F00E6907A /* CustomAnimationTransitions.swift in Sources */,
 				DD7AF85A2205B5D600E6907A /* CustomPresentationViewController.swift in Sources */,
 				DD7AF85422051E8B00E6907A /* CustomPresentationTransitions.swift in Sources */,
+				DD6E128A221EB16500FA8CB2 /* InteractiveTransitions.swift in Sources */,
 				DD7AF84022050F4F00E6907A /* ViewController.swift in Sources */,
 				DD7AF83E22050F4F00E6907A /* AppDelegate.swift in Sources */,
+				DD6E1288221EB0DA00FA8CB2 /* InteractiveTransitionViewController.swift in Sources */,
 				DD7AF8502205101800E6907A /* CustomAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
